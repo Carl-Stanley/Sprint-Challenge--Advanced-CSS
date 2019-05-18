@@ -11,9 +11,29 @@ html {
      
   
   }
+
 }
 
+.btn {
+
+  background-color: aqua;
+  
+   .custom-btn-layout(@bgColor: @secondary-color, @width: 95px, @font-btn-size: @font-size);
+
+
+@media @phone {
+
+  align-self: center;
+  margin: 20px 0;
+  .btn-media();
+
+}
+
+}
 .container {
+
+  display: flex;
+  flex-direction: column;
     
   @media @phone {
   
@@ -102,9 +122,10 @@ html {
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    
+    //display: flex;
+    //flex-wrap: wrap;
+    //width: 100%;
 
     @media @phone {
 
@@ -198,32 +219,23 @@ html {
   .walk {
 
    
-    margin-top: 60px;
-    border-top: 1px solid black;
-    padding: 50px 60px;
+    //margin-top: 60px;
+    //border-top: 1px solid black;
+    //padding: 50px 60px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    //justify-content: center;
     flex-direction: column;
     
     .walk-text {
 
-
+      display: flex;
+      flex-direction: row;
      
-      .btn {
-
-           .custom-btn-layout(@bgColor: @secondary-color, @width: 95px, @font-btn-size: @font-size);
       
-        
-        @media @phone {
-        
-          align-self: center;
-          margin: 20px 0;
-          .btn-media();
 
       }
 
-      }
       h3 {
 
         font-size: .5rem;
@@ -280,4 +292,3 @@ html {
 }
 
 }// home
-}
