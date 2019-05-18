@@ -356,9 +356,6 @@ html {
   justify-content: center;
   flex-direction: column;
 }
-.home .visit-planets .walk .walk-text {
-  width: 50%;
-}
 .home .visit-planets .walk .walk-text .btn {
   border: 1px solid teal;
   background-color: #22283b;
