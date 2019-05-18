@@ -3,9 +3,27 @@
 html {
 
   overflow-x: hidden; 
+ 
 
+  @media @phone {
+
+    overflow-x: hidden; 
+     
+  
+  }
 }
 
+.container {
+    
+  @media @phone {
+  
+  width:80%;    
+  overflow-x: hidden; 
+  overflow-y: hidden;
+
+  }
+
+}
 .home {
 
   width: 700px;
@@ -17,58 +35,44 @@ html {
   flex-flow: wrap;
 
   max-width: 100%;  
-  overflow-x: hidden; 
+  
   
 }
-  .container {
-    
-    @media @phone {
-    max-width: 80%;  
-    overflow-x: hidden; 
-
-    }
   
-  }
 
     
   .text-lift-off {
 
     @media @phone {
       
-      max-width: 500px;
-    
-       
+      max-width: 500px;     
                   
-      }
-    
+      }    
     
 
     h2 {
-
+      
       font-size: 2.25rem;
-
+      
       @media @phone {
-
-        display: block;
+        
         font-size: 1.25rem;
-
 
       }
 
     }
-
-    
        
-    .text-LO();
+    //.text-LO();
 
     p {
+
 
       
       .p-set();
 
       @media @phone {
           width: 80%;
-          font-size: .90rem;
+          font-size: 1rem;
           margin: 0 auto;
 
 

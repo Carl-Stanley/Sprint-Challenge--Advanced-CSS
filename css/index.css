@@ -224,6 +224,18 @@ footer {
 html {
   overflow-x: hidden;
 }
+@media only screen and (max-width: 500px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 80%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
 .home {
   width: 700px;
 }
@@ -233,19 +245,9 @@ html {
     flex-direction: column;
     flex-flow: wrap;
     max-width: 100%;
-    overflow-x: hidden;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .home .container {
-    max-width: 80%;
-    overflow-x: hidden;
   }
 }
 .home .text-lift-off {
-  width: 100%;
-  margin: 35px 0;
-  padding-left: 1%;
   /* end text lift off */
 }
 @media only screen and (max-width: 500px) {
@@ -258,7 +260,6 @@ html {
 }
 @media only screen and (max-width: 500px) {
   .home .text-lift-off h2 {
-    display: block;
     font-size: 1.25rem;
   }
 }
@@ -268,7 +269,7 @@ html {
 @media only screen and (max-width: 500px) {
   .home .text-lift-off p {
     width: 80%;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0 auto;
   }
 }
