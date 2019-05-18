@@ -345,9 +345,6 @@ html {
   display: flex;
   justify-content: center;
 }
-.home .visit-planets .walk .walk-text {
-  width: 50%;
-}
 .home .visit-planets .walk .walk-text h3 {
   margin-bottom: 10px;
 }
