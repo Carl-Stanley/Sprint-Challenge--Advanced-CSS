@@ -1,23 +1,91 @@
 // Home Content
 
+html {
+
+  overflow-x: hidden; 
+
+}
+
 .home {
 
+  
+
+  @media @phone {
+
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+
+  max-width: 100%;  
+  overflow-x: hidden; 
+  
+}
+  .container {
+    
+    @media @phone {
+    max-width: 100%;  
+    overflow-x: hidden; 
+
+    }
+  
+  }
+
+    
   .text-lift-off {
+
+    @media @phone {
+      
+      max-width: 500px;
+    
+       
+                  
+      }
+    
+    
+
+    h2 {
+
+      @media @phone {
+
+        display: block;
+        font-size: 1.5rem;
+
+
+      }
+
+    }
+
     
        
     .text-LO();
 
     p {
 
+      
       .p-set();
 
-    }
+      @media @phone {
+          width: 80%;
+          font-size: .90rem;
+          margin: 0 auto;
+
+
+      }
+
+
+    } /* end text lift off */
+
+    @media @phone {
+      padding: 0 1%;
+  } 
 
   } 
    .intro {
 
     h2 {
       padding: 15px;
+     
+
     }
 
     p {
@@ -32,26 +100,87 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+
+      width: 500px;
+
+      .blast {
+
+        width: 60%;
+
+        margin: 0 auto;
+
+        border: none;
+
+      }
+
+      .sky {
+
+        display: none;
+
+      }
+
+      .launch {
+
+        display: none;
+
+      }
+  
+  }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 10px;
       height: 100%;
+
+      @media @phone {
+
+        width: 100px;
+        margin: 0 auto;
+        border: none;
+
+        }
+
+
     }
   }
 
   .visit-planets {
+
+    @media @phone {      
+      
+      width: 500px;
+
+                  
+      }
+
     padding: 5px;
     
     h3 {
       margin-top: 5px;
+
+      @media @phone {
+  
+          font-size: 1.5rem;
+          
+  
+        }
+
     }
 
     p {
-      margin-top: 5px;
+
+      
       .p-set();
-      text-align: left;
-    }
+
+      @media @phone {
+          width: 80%;
+          font-size: .90rem;
+          margin: 0 auto;
+
+
+      }
   }
 
   .walk {
@@ -66,6 +195,13 @@
 
       h3 {
         margin-bottom: 10px;
+
+        @media @phone {
+  
+          font-size: 1.5rem;
+          
+  
+        }
       }
 
       p {
@@ -77,6 +213,14 @@
       .btn {
 
         .custom-btn-layout(@bgColor: @secondary-color, @width: 95px, @font-btn-size: @font-size);
+
+        @media @phone {
+        
+          align-self: center;
+          margin: 20px 0;
+          .btn-media();
+
+      }
 
       }
     }
@@ -95,6 +239,8 @@
   
   footer {
 
+    margin: 0 auto;
+
     background-color: @wild-sand;
 
     p {
@@ -103,7 +249,7 @@
       
     }
 
-    margin-bottom: 10px;
+    
 
 }
 
