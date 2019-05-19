@@ -397,9 +397,22 @@ html {
   flex-wrap: wrap;
   flex-direction: column;
 }
+@media only screen and (max-width: 500px) {
+  .home .visit-planets .walk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
 .home .visit-planets .walk .walk-text {
   display: flex;
   flex-direction: row;
+}
+@media only screen and (max-width: 500px) {
+  .home .visit-planets .walk .walk-text {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .visit-planets .walk h3 {
   font-size: 0.5rem;
