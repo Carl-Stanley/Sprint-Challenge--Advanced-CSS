@@ -1,1 +1,48 @@
 // Mixins Here
+
+/* Custom Mixin */
+.text-LO () {
+
+    width: 100%;
+    margin: 35px 0;
+    padding-left: 1%;
+
+}
+
+
+/* Custom P element Mixin */
+.p-set() {
+
+    font-size: 1.25rem;
+
+}
+
+/* Custom Button Parametric Mixin */ 
+
+.custom-btn-layout(@bgColor: teal, @width: 200px, @height: 35px, @font-btn-size: 1.2rem) {
+    
+    border: 1px solid teal;
+    background-color: @bgColor;
+    width: @width;
+    height: @height;    
+    text-align: center;
+    color: @main-color;
+    cursor: pointer;
+    padding: 5px;
+    font-size: @font-btn-size;
+    border-radius: 5px;
+
+    &:hover {
+
+        background-color: red;  
+        color: aqua;
+    }
+}
+
+.btn-media() {
+
+    width: 300px; 
+    
+    margin-left: 30px; 
+    
+}

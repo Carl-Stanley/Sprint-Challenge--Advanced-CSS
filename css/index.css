@@ -1,0 +1,474 @@
+/* Custom Mixin */
+/* Custom P element Mixin */
+/* Custom Button Parametric Mixin */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  margin: 0 auto;
+  height: 80px;
+  width: 800px;
+  background: #e9e3e388;
+}
+@media only screen and (max-width: 500px) {
+  header {
+    max-width: 500px;
+    overflow-x: hidden;
+    width: 80%;
+    height: 100px;
+  }
+}
+header a {
+  text-decoration: none;
+  color: #22283A;
+  padding: 5px 5px 20px 5px;
+}
+header h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 5px 5px 20px 5px;
+}
+header nav {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 500px) {
+  header nav {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding-bottom: 5px;
+  }
+}
+.top-img {
+  width: 700px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  .top-img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.walk-img {
+  margin-left: 4%;
+}
+.walk-img img {
+  width: 100%;
+  border-radius: 15px;
+}
+html {
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 500px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+/* Button Styling */
+.btn {
+  border: 1px solid teal;
+  background-color: #22283b;
+  width: 95px;
+  height: 35px;
+  text-align: center;
+  color: #f4f4f4;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: red;
+  color: aqua;
+}
+@media only screen and (max-width: 500px) {
+  .btn {
+    align-self: center;
+    margin: 20px 0;
+    width: 300px;
+    margin-left: 30px;
+  }
+}
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 80%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+/*end */
+.walk-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: center;
+  align-content: center;
+}
+@media only screen and (max-width: 500px) {
+  .walk-img {
+    display: none;
+  }
+}
+.walk-img2 img {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .walk-img2 img {
+    display: block;
+    widows: 50%;
+    margin-left: 40px;
+  }
+}
+.item p {
+  font-size: 1.25rem;
+}
+@media only screen and (max-width: 500px) {
+  .item p {
+    font-size: 1.15rem;
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .item h3 {
+    font-size: 1.25rem;
+    margin-left: 40px;
+  }
+}
+.home {
+  width: 700px;
+}
+@media only screen and (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    max-width: 100%;
+  }
+}
+.home .text-lift-off {
+  width: 100%;
+  margin: 35px 0;
+  padding-left: 1%;
+  /* end text lift off */
+}
+@media only screen and (max-width: 500px) {
+  .home .text-lift-off {
+    width: 500px;
+    max-width: 500px;
+  }
+}
+.home .text-lift-off h2 {
+  font-size: 2.25rem;
+}
+@media only screen and (max-width: 500px) {
+  .home .text-lift-off h2 {
+    margin-left: 40px;
+    width: 50%;
+    font-size: 1.25rem;
+  }
+}
+.home .text-lift-off p {
+  font-size: 1.25rem;
+}
+@media only screen and (max-width: 500px) {
+  .home .text-lift-off p {
+    width: 80%;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home .text-lift-off {
+    padding: 0 1%;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+  text-align: left;
+}
+@media only screen and (max-width: 500px) {
+  .home .space-images {
+    width: 500px;
+  }
+  .home .space-images .blast {
+    width: 60%;
+    margin: 0 auto;
+    border: none;
+    margin-left: 60px;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 10px;
+  height: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .home .space-images img {
+    width: 100px;
+    margin: 0 auto;
+    border: none;
+  }
+}
+.home .visit-planets {
+  border-bottom: 1px solid black;
+  padding: 0px 0px 40px 0px;
+  padding: 5px;
+}
+@media only screen and (max-width: 500px) {
+  .home .visit-planets {
+    width: 500px;
+    border-bottom: 1px solid white;
+  }
+}
+.home .visit-planets h3 {
+  font-size: 2rem;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 500px) {
+  .home .visit-planets h3 {
+    font-size: 1.5rem;
+    margin-left: 40px;
+  }
+}
+.home .visit-planets p {
+  font-size: 1.25rem;
+}
+@media only screen and (max-width: 500px) {
+  .home .visit-planets p {
+    width: 80%;
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+}
+.home .visit-planets .walk {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media only screen and (max-width: 500px) {
+  .home .visit-planets .walk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+.home .visit-planets .walk .walk-text {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 500px) {
+  .home .visit-planets .walk .walk-text {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.home .visit-planets .walk h3 {
+  font-size: 0.5rem;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .home .visit-planets .walk h3 {
+    font-size: 1.5rem;
+  }
+}
+.home .visit-planets .walk p {
+  margin-bottom: 26px;
+  font-size: 1.25rem;
+  text-align: left;
+}
+.home footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+}
+.home footer p {
+  font-size: 1.25rem;
+}
